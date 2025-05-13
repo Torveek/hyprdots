@@ -53,8 +53,8 @@ setup_terminal_theme() {
 
 setup_hyprland() {
   echo -e "${BLUE}Copying config files...${RESET}"
-  git clone https://github.com/sameedmajgaonkar/hypr-dots.git
-  rsync -av --exclude=".git" --exclude="README.md" $HOME/hypr-dots/. $HOME/
+  git clone https://github.com/Torveek/hyprdots.git
+  rsync -av --exclude=".git" --exclude="README.md" $HOME/hyprdots/. $HOME/
 }
 
 setup_theme(){
@@ -75,17 +75,6 @@ enable_multilib(){
 }
 
 main(){
-  first_dir="$(pwd)"
-  script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
-
-  cd "$script_dir"
-
-  if [[ $# -eq 0 ]]; then
-    echo "Usage: $0 <package>"
-    echo "Available packages: shells, neovim, terminal, desktop, fonts, gaming, bluetooth"
-    echo "Or run $0 all to install all packages"
-    exit 1
-  fi
 
   echo -e "${RED_BOLD}ATTENTION!${RESET}"
   echo "This script was made for my personal use. You should probably not run it yourself."
