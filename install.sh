@@ -38,8 +38,8 @@ fi
 install_dependencies() {
   echo -e "${BLUE}Installing dependencies...${RESET}"
   sudo pacman -Syy
-  paru -S --noconfirm hyprland-git swww-git zed waterfox-bin rofi-power-menu rofi-wayland waybar gradience swaync whitesur-icon-theme vimix-cursors kitty xdg-desktop-portal-hyprland rofi-bluetooth-git hyprpolkitagent wlogout
-  sudo pacman -S --noconfirm python-pywal kitty brightnessctl grim slurp pywalfox pipewire wireframe hypridle
+  paru -S hyprland-git swww-git zed waterfox-bin rofi-power-menu rofi-wayland waybar gradience swaync whitesur-icon-theme vimix-cursors kitty xdg-desktop-portal-hyprland rofi-bluetooth-git hyprpolkitagent wlogout
+  sudo pacman -S python-pywal kitty brightnessctl grim slurp pywalfox pipewire wireframe hypridle
 }
 
 setup_terminal_theme() {
